@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placing and Replacing Content in an Iframe</title>
+</head>
+<body>
+
+    <h1>Embedding a Web Page and Replacing Iframe Content</h1>
+
+    <p>This project demonstrates how to place a web page within another web page using an <code>&lt;iframe&gt;</code> tag and how to dynamically replace the content of an iframe using JavaScript.</p>
+
+    <h2>Step 1: Embed a Web Page Using an Iframe</h2>
+    <iframe id="myIframe" src="https://images.unsplash.com/photo-1742105682489-94149abb1009?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="150" height="100" title="Example Website"></iframe>
+
+    <h2>Step 2: Replace the Content of the Iframe</h2>
+    <button onclick="changeIframeContent()">Click to Change Iframe Content</button>
+
+    <script>
+        function changeIframeContent() {
+            // Replace the current content of the iframe with a new URL
+            document.getElementById("myIframe").src = "https://images.unsplash.com/photo-1742197062761-1e44b0d7fd2e?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        }
+    </script>
+</body>
+</html>
